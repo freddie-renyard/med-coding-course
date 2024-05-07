@@ -21,7 +21,7 @@ A general overview of the course is provided below:
 
 1. Course Introduction - introduction to aims of the course, overview of emergent technology use in medicine and radiology.
 2. DICOM and Python - opening, processing, and rendering DICOM data with Python. Introduction to core concepts for people unfamiliar with digital image representation (bit depth, Houndsfield units, compression, colour-maps, etc.). *Packages: Pydicom*
-3. Databases and Python - opening, processing and analysing tabular data in Excel format with medical focus. *Packages: Pandas*
+3. Datasets and Python - opening, processing and analysing tabular data in Excel format with medical focus. *Packages: Pandas*
 4. 3D Printing for Medicine - introduction to 3D anatomy segmentation and 3D printing workflows. *Software required: Invesalius*
 5. AI for Medicine Part 1 - using Keras within TensorFlow to build a basic binary chest X-ray classifier. *Packages: Pandas, NumPy, TensorFlow*
 6. AI for Medicine Part 2 - how to statistically evaluate the performance of the chest X-ray classifier on test data, and a broad discussion of other types of AI model. *Packages: Pandas, NumPy, TensorFlow*
