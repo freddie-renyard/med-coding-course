@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import random
-from matplotlib import pyplot as plt
 from random import randrange
 from datetime import timedelta
 import datetime
@@ -64,6 +63,7 @@ if __name__ == "__main__":
         np.random.normal(loc=65.0, scale=10.0, size=int(n_patients * age_dist_split))
     ])
     np.random.shuffle(age)
+    age = np.clip(age, 0, 103)
 
     # Generate the imaging modality and the time of imaging
     admission_dates = [random_date(start_date, end_date) for _ in range(n_patients)]
@@ -76,11 +76,12 @@ if __name__ == "__main__":
 
     df = pd.DataFrame({
         "Patient ID": [i for i in range(n_patients)],
-        "Age": age,
+        "Age": age.astype("int32"),
         "Admission Date": admission_dates,
         "Imaging Date": imaging_dates,
         "Imaging Modality": img_mod
     })
 
     # Save the simulated data to an Excel file
-    df1.to_excel("data/imaging_audit.xlsx")
+    df.to_excel("data/imaging_audit.xlsx")
+    df.to_csv("data/imaging_audit.csv")
