@@ -12,7 +12,7 @@ This document details the high level learning outcomes for each session in the c
 
 By the end of the seminar, clinicians should:
 - Understand the CSV format
-- Understand what constitutes ?machine readable? data and what considerations clinicians must make to maximise this
+- Understand what constitutes "machine readable" data and what considerations clinicians must make to maximise this
 - Understand the different data types in a table - strings, integers, floats
 - Understand the broad uses of this type of information
 
@@ -62,7 +62,7 @@ By the end of the seminar, clincians should:
 
 This workshop will cover the basics of segmentation with InVesalius. Course attendees will be instructed to install Invesalius at the end of the preceding seminar. The workshop will cover loading 3D DICOM studies with InVesalius, how to navigate the image, how to segment anatomy from a scan, and how to export for fused-deposition modelling (FDM) 3D printing. Slicing with Ultimaker Cura may be demonstrated at the end of the session. A post-workshop activity will include an informal competition for producing the best object segmentation with InVesalius. The best anatomical models at the end of the workshop will be printed and showcased on course social media.
 
-## Session Structure
+### Session Structure
       
 - Opening a 3D DICOM scan with InVesalius
 - Navigating a study with InVesalius
@@ -75,7 +75,7 @@ This workshop will cover the basics of segmentation with InVesalius. Course atte
     - Brief overview of the remaining tools which have not been covered
 - Exporting segmentation for 3D printing
     - How to select different surfaces and delete irrelevant anatomy or segmentation noise
-    - What format 3D printers accept, and how to convert between STL and G-code
+    - What file formats 3D printers accept, and how to convert between STL and G-code
     - The importance of the mesh being manifold, and how 3D printer software copes with this
 
 *NB - A DICOM study for this section of the course which we have the relevant permissions/anonimity to use needs to be identified.*
