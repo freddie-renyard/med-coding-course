@@ -81,3 +81,6 @@ if __name__ == "__main__":
         "Imaging Date": imaging_dates,
         "Imaging Modality": img_mod
     })
+
+    # Save the simulated data to an Excel file
+    df1.to_excel("data/imaging_audit.xlsx")
