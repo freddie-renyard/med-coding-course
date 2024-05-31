@@ -83,5 +83,5 @@ if __name__ == "__main__":
     })
 
     # Save the simulated data to an Excel file
-    df.to_excel("data/imaging_audit.xlsx")
-    df.to_csv("data/imaging_audit.csv")
+    df.to_excel("notebooks/data/imaging_audit.xlsx")
+    df.to_csv("notebooks/data/imaging_audit.csv")
