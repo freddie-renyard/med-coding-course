@@ -36,13 +36,13 @@ def select_imaging_mod(pt_age, admission_date):
 
     # Get the length of time for the scan based on the modality
     if int(val) == 0:
-        delta = np.random.f(1, 48, 1)[0] * 10
+        delta = np.clip(np.random.f(1, 32, 1)[0] * 3, 0, 12)
     elif int(val) == 1:
-        delta = np.random.f(1, 48, 1)[0] * 10
+        delta = np.clip(np.random.f(1, 32, 1)[0] * 3, 0, 12)
     else:
-        delta = np.random.f(100, 12, 1)[0] * 10
+        delta = np.clip(np.random.f(2, 12, 1)[0] * 3, 0, 72)
 
-    return np.random.choice(imaging_mod[int(val)]), admission_date + timedelta(days=delta)
+    return np.random.choice(imaging_mod[int(val)]), admission_date + timedelta(hours=delta)
 
 def random_date(start_date, end_date):
     # Generate a random date based on two limits
